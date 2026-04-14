@@ -288,7 +288,7 @@ function App() {
           <div className={`text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="mb-12">
               <img
-                src="images/image.png"
+                src="images/image.jpeg"
                 alt="Prerna Sachdeva"
                 className="w-36 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-brown/30 shadow-lg"
               />
@@ -348,7 +348,7 @@ function App() {
                     <p className="text-brown font-medium">{job.company}</p>
                   </div>
                   <div className="text-sm text-brown/80 font-light">
-                    {job.location} · {job.dates}
+                    {job.location} ï¿½ {job.dates}
                   </div>
                 </div>
                 <ul className="space-y-3">
@@ -464,7 +464,7 @@ function App() {
                     <p className="text-brown font-medium">{edu.degree}</p>
                   </div>
                   <div className="text-sm text-brown/80 font-light mt-2 md:mt-0">
-                    {edu.location} · {edu.dates}
+                    {edu.location} ï¿½ {edu.dates}
                   </div>
                 </div>
                 <p className="text-brown leading-relaxed font-light">{edu.details}</p>
@@ -533,7 +533,7 @@ function App() {
       <footer className="bg-brown text-white/80 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="font-light tracking-wide">
-            © 2026 Prerna Sachdeva · Data Analyst & Business Intelligence.
+            ï¿½ 2026 Prerna Sachdeva ï¿½ Data Analyst & Business Intelligence.
           </p>
         </div>
       </footer>
