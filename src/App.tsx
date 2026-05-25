@@ -288,7 +288,7 @@ function App() {
           <div className={`text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="mb-12">
               <img
-                src="images/image.jpeg"
+                src="images/image.png"
                 alt="Prerna Sachdeva"
                 className="w-36 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-brown/30 shadow-lg"
               />
