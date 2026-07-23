@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ChevronDown, Linkedin, Mail, Menu, Phone, Target, TrendingUp, Users, X } from 'lucide-react';
+import { Brain, ChevronDown, Cloud, Code2, Database, Linkedin, Mail, Menu, Mic, Phone, Wrench, X } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -39,129 +39,122 @@ function App() {
   };
 
   const summary =
-    'Business Analyst with experience translating operational and research data into actionable insights through SQL, Python, Tableau, and Power BI across 100K+ records and multi-source datasets. Delivered 15% reduction in operational inefficiencies and 35% improvement in reporting workflow efficiency by analyzing business data, automating reporting processes, and building decision-ready dashboards. Brings hands-on exposure to statistical analysis, business intelligence, machine learning, and stakeholder collaboration to support data-driven business decisions and scalable analytics solutions.';
+    'AI Engineer with 2+ years of experience developing LLM applications, RAG pipelines, multi-agent systems, and AI-powered workflow automation using Python, LangChain, CrewAI, FastAPI, and vector databases. Engineered a 7-agent financial analysis platform, a 6-agent CRM automation system, and a real-time voice interview coach integrating speech-to-text, text-to-speech, semantic search, and function calling. Experienced in designing agent orchestration workflows, integrating AI and business APIs, implementing asynchronous processing, and supporting local and cloud-based LLM inference.';
 
   const experience = [
     {
       company: 'Stony Brook Hospitals',
       role: 'Senior Research Aide',
       location: 'Stony Brook, NY',
-      dates: 'Aug 2025 - Present',
+      dates: 'Aug 2025 - May 2026',
       highlights: [
-        'Performed statistical analysis on exposure and health data related to WTC participants, quantifying toxin and metal exposure levels and evaluating correlations with disease prevalence.',
-        'Analyzed research datasets and structured findings into clear analytical outputs that supported evidence-based interpretation, reporting accuracy, and publication-ready documentation.',
-        'Collaborated with faculty researchers to interpret results, synthesize insights, and translate complex analytical findings into actionable research narratives for ongoing health exposure studies.',
+        'Analyzed and validated healthcare and exposure datasets across 1,000+ World Trade Center participant records using Python, Excel, and statistical methods to identify toxin exposure and disease-prevalence patterns.',
+        'Established repeatable data-cleaning and validation workflows for multi-source clinical research data, improving dataset consistency and supporting publication-ready analysis.',
+        'Visualized toxin-exposure and disease-prevalence findings through charts, analytical summaries, and research-ready reports, enabling faculty stakeholders to interpret clinical patterns across 1,000+ participant records.',
       ],
     },
     {
       company: 'Stony Brook University',
       role: 'Research Assistant',
       location: 'Stony Brook, NY',
-      dates: 'Aug 2025 - Dec 2025',
+      dates: 'Aug 2025 - May 2026',
       highlights: [
-        'Developed StockAgent, an LLM-based simulator to model investor trading behavior under external market factors, executing a structured 4-phase workflow to replicate real-world trading scenarios.',
-        'Evaluated LLMs including GPT and Gemini for trading behavior, profitability, and test data leakage, strengthening model assessment rigor across AI-driven financial simulation workflows.',
+        'Architected StockSage, a multi-agent financial analysis platform using CrewAI to orchestrate 7 specialized AI agents across valuation, fundamentals, sentiment analysis, market research, risk assessment, and cross-agent review workflows.',
+        'Integrated 5 LLM providers - Ollama, OpenAI, Gemini, Groq, and Anthropic - with automatic fallback logic, enabling flexible on-premises and cloud inference while maintaining continuity across 7-agent financial analysis workflows.',
+        'Engineered a Server-Sent Events pipeline to stream real-time progress, analysis updates, and generated outputs from 7 specialized AI agents to the user interface during multi-stage financial workflows.',
+        'Processed stock prices, financial statements, news, Google Trends, insider transactions, and institutional holdings using Python and yfinance to generate structured BUY, HOLD, and SELL recommendations with confidence scores.',
       ],
     },
     {
       company: 'Shree Spring Industries',
-      role: 'Data Analyst',
+      role: 'AI Engineer',
       location: 'India',
       dates: 'Jun 2023 - Jul 2024',
       highlights: [
-        'Assessed production and inventory data to identify process inefficiencies, delivering a 15% improvement in operational efficiency through business-focused reporting and performance analysis.',
-        'Cleaned, transformed, and validated 100,000+ records using Python and SQL, strengthening data accuracy and supporting reliable reporting, planning, and operational decision-making.',
-        'Automated weekly reporting workflows and analytics processes, improving reporting efficiency by 35% and enabling faster, more consistent business insights for stakeholders.',
+        'Developed a demand forecasting model using Python and Scikit-learn to analyze 2 operational data sources - historical inventory and production records - strengthening spare-parts planning and identifying potential stockout risks.',
+        'Engineered an internal chatbot using LangChain and OpenAI API that enabled operations teams to query 3 business data areas - inventory, orders, and production - through natural-language prompts, reducing manual data retrieval effort.',
+        'Automated weekly operational reporting using Python and LLM-based summarization, transforming structured production and inventory data into actionable insights for faster supply-chain decision-making.',
       ],
     },
   ];
 
   const projects = [
     {
-      title: 'MediMind Multi-Agent Diagnostic System',
-      subtitle: 'AI Healthcare Project',
+      title: 'AI-Powered CRM with Agentic Workflows',
+      subtitle: 'Agentic Sales & Customer Success Platform',
       category: 'Multi-Agent AI',
       introduction:
-        'Built a multi-agent diagnostic system for parallel analysis of medical reports across multiple healthcare specialties.',
+        'Architected an agentic CRM platform with 6 specialized AI agents automating end-to-end sales and customer relationship workflows.',
       problem:
-        'Medical report interpretation across specialties can be slow and fragmented, limiting timely and structured diagnostic support.',
+        'Sales and customer success teams juggle lead qualification, email triage, pipeline tracking, and scheduling across disconnected tools, slowing response times and creating manual overhead.',
       objective:
-        'Design an AI-driven workflow that speeds diagnostic processing while producing clear, structured recommendations for clinical support.',
+        'Build an agentic platform that automates lead qualification, email intelligence, pipeline management, customer success, meeting scheduling, and performance analytics.',
       methodology: [
-        'Pioneered a 3-agent system to run cardiology, psychology, and respiratory analysis in parallel.',
-        'Used threaded execution to improve diagnostic processing speed and support scalable orchestration.',
-        'Designed the architecture to scale from 3 specialties to 6+ specialties.',
+        'Architected 6 specialized AI agents using LangChain, Anthropic Claude, and OpenAI GPT models.',
+        'Implemented asynchronous task processing with Celery and Redis for scalable agent execution.',
+        'Delivered real-time WebSocket updates alongside Gmail, Google Calendar, and Slack API integrations.',
       ],
       results: [
-        'Improved diagnostic processing speed by about 50%.',
-        'Generated summarized outputs with the top 3 diagnostic recommendations.',
+        'Automated end-to-end sales and customer relationship workflows across 6 functional areas.',
+        'Enabled real-time visibility into agent activity and pipeline status via WebSocket updates.',
       ],
       conclusion:
-        'Demonstrated scalable multi-agent healthcare analysis with structured decision support outputs.',
+        'Demonstrated a scalable agentic architecture for automating sales and customer success operations.',
     },
     {
-      title: 'Credit Risk Analysis Model',
-      subtitle: 'Machine Learning Risk Modeling',
-      category: 'Predictive Analytics',
+      title: 'AI Interview Coach',
+      subtitle: 'Real-Time Voice-Based Mock Interview Platform',
+      category: 'Voice AI',
       introduction:
-        'Built classification models to assess loan default risk using large-scale financial application data.',
+        'Built a real-time voice-based AI interview coach that conducts conversational mock interviews with live transcription and structured feedback.',
       problem:
-        'Loan approval processes require more reliable default prediction to reduce false approvals and strengthen lending decisions.',
+        'Candidates lack accessible, realistic practice for technical interviews that combines natural conversation with context-aware, project-specific questioning.',
       objective:
-        'Improve credit risk evaluation by applying classification models to 50,000+ loan applications.',
+        'Create a voice-driven interview coach that generates context-aware technical questions and delivers structured feedback in real time.',
       methodology: [
-        'Analyzed 50,000+ loan applications using Python-based data workflows.',
-        'Built Logistic Regression, Random Forest, and XGBoost models for risk assessment.',
-        'Compared performance to improve prediction quality and reduce approval risk.',
-      ],
-      results: ['Improved prediction accuracy by 12%.', 'Reduced false approvals by 18%.'],
-      conclusion:
-        'Delivered a more reliable, data-driven lending risk workflow using scalable classification models.',
-    },
-    {
-      title: 'Multi-Agent Financial Analysis Platform',
-      subtitle: 'Real-Time Stock Analytics Platform',
-      category: 'Financial Analytics',
-      introduction:
-        'Developed a multi-agent platform for real-time stock analysis and investment recommendation workflows.',
-      problem:
-        'Investors need timely and structured views of stock metrics, market news, and company fundamentals to make faster decisions.',
-      objective:
-        'Create a scalable financial analytics workflow using agents, live APIs, and LLM-powered reasoning.',
-      methodology: [
-        'Built the platform using Gemini API and LangChain.',
-        'Integrated market data APIs and financial news APIs for live analysis.',
-        'Processed stock metrics, market news, and company fundamentals into recommendation workflows.',
+        'Built the voice pipeline using LiveKit Agents SDK, AssemblyAI speech-to-text, Cartesia text-to-speech, and Silero VAD.',
+        'Developed a RAG pipeline with ChromaDB and OpenAI embeddings to retrieve project documentation.',
+        'Used semantic search and function calling to generate context-aware technical interview questions.',
       ],
       results: [
-        'Enabled real-time stock analysis through integrated live data workflows.',
-        'Created a scalable foundation for investment recommendation support.',
+        'Enabled live transcription and structured feedback during conversational mock interviews.',
+        'Generated context-aware technical questions grounded in candidate project documentation.',
       ],
       conclusion:
-        'Showcased multi-agent orchestration for financial analytics and decision support.',
+        'Showcased an end-to-end voice AI system combining speech processing with retrieval-augmented question generation.',
     },
   ];
 
   const skillCategories = [
     {
-      icon: Target,
-      title: 'Programming',
-      skills: ['Python', 'SQL', 'R'],
+      icon: Brain,
+      title: 'AI & LLM',
+      skills: ['Large Language Models', 'Generative AI', 'Prompt Engineering', 'Retrieval-Augmented Generation', 'Agent Orchestration', 'Multi-Agent Systems', 'LangChain', 'LlamaIndex', 'OpenAI API', 'Gemini API', 'Anthropic Claude', 'Ollama'],
     },
     {
-      icon: TrendingUp,
-      title: 'Data Visualization & BI',
-      skills: ['Tableau', 'Power BI', 'Microsoft Excel', 'Seaborn', 'Matplotlib'],
+      icon: Code2,
+      title: 'Programming & Querying',
+      skills: ['Python', 'FastAPI', 'CrewAI', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'LiveKit Agents SDK'],
     },
     {
-      icon: Users,
-      title: 'Analysis & ML',
-      skills: ['Data Analysis', 'Statistical Analysis', 'A/B Testing', 'Hypothesis Testing', 'Classification', 'Clustering', 'Regression', 'Pandas', 'NumPy', 'Scikit-learn', 'XGBoost', 'NLP', 'LLMs'],
+      icon: Database,
+      title: 'Vector Databases & Search',
+      skills: ['ChromaDB', 'Pinecone', 'FAISS', 'Semantic Search', 'Vector Embeddings'],
     },
     {
-      icon: Target,
-      title: 'Databases & Tools',
-      skills: ['MySQL', 'SQL Server', 'PostgreSQL', 'MongoDB', 'Git', 'GitHub', 'VS Code', 'AWS (Glue, S3)', 'Snowflake', 'BigQuery'],
+      icon: Cloud,
+      title: 'Databases & Cloud',
+      skills: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'Snowflake', 'BigQuery', 'AWS S3', 'AWS Glue'],
+    },
+    {
+      icon: Wrench,
+      title: 'Development Tools',
+      skills: ['Celery', 'Redis', 'WebSockets', 'REST APIs', 'Docker', 'Git', 'GitHub', 'VS Code'],
+    },
+    {
+      icon: Mic,
+      title: 'Voice AI',
+      skills: ['LiveKit', 'AssemblyAI', 'Cartesia TTS', 'Silero VAD', 'Speech-to-Text', 'Text-to-Speech', 'Voice Activity Detection'],
     },
   ];
 
@@ -189,27 +182,12 @@ function App() {
       description: 'Foundational certification focused on practical AI concepts and responsible usage.',
     },
     {
-      title: 'Google Data Analytics',
-      platform: 'Google',
-      description: 'Certification covering data cleaning, analysis, visualization, and business insight generation.',
-    },
-    {
       title: 'Microsoft Generative AI for Data Analysis',
       platform: 'Microsoft',
       description: 'Focused on applying generative AI capabilities in data analysis workflows.',
     },
     {
-      title: 'Microsoft Power BI Data Analysis',
-      platform: 'Microsoft',
-      description: 'Certification in Power BI reporting, dashboards, and analytical modeling.',
-    },
-    {
-      title: 'Tableau Desktop Specialist',
-      platform: 'Tableau',
-      description: 'Validated Tableau skills for building dashboards and visual analysis workflows.',
-    },
-    {
-      title: 'Machine Learning Fundamentals Micro-Credential',
+      title: 'Machine Learning Fundamentals',
       platform: 'Alteryx',
       description: 'Micro-credential in core machine learning concepts and practical applications.',
     },
@@ -297,7 +275,7 @@ function App() {
               PRERNA SACHDEVA
             </h1>
             <div className="text-lg text-brown mb-2 font-light tracking-widest">
-              Data Analyst | Business Intelligence & Analytics | SQL, Python, Tableau, Power BI
+              AI Engineer | LLM Applications, RAG & Multi-Agent Systems | Python, LangChain, FastAPI
             </div>
             <div className="text-sm uppercase tracking-[0.3em] text-brown/80 mb-1">
               STONY BROOK, NY, USA
@@ -372,7 +350,7 @@ function App() {
             <div className="w-16 h-0.5 bg-brown mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-cream p-8 rounded-sm shadow-sm border border-brown/10">
                 <div className="text-xs uppercase tracking-[0.25em] text-brown/70 mb-3">{project.category}</div>
@@ -425,11 +403,11 @@ function App() {
             <h2 className="text-5xl font-display text-black mb-6 tracking-wide">SKILLS</h2>
             <div className="w-16 h-0.5 bg-brown mx-auto mb-6"></div>
             <p className="text-lg text-brown max-w-2xl mx-auto font-light">
-              Data analysis, visualization, machine learning, and analytics tooling expertise.
+              LLM applications, RAG pipelines, multi-agent orchestration, and voice AI tooling expertise.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {skillCategories.map((category, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-black mx-auto mb-8 flex items-center justify-center">
@@ -498,7 +476,7 @@ function App() {
             <h2 className="text-5xl font-display mb-8 tracking-wide">CONTACT</h2>
             <div className="w-16 h-0.5 bg-brown mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto font-light">
-              Let&apos;s connect for data analyst, business intelligence, and analytics opportunities.
+              Let&apos;s connect for AI engineering, LLM applications, and multi-agent systems opportunities.
             </p>
           </div>
 
@@ -533,7 +511,7 @@ function App() {
       <footer className="bg-brown text-white/80 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="font-light tracking-wide">
-            � 2026 Prerna Sachdeva � Data Analyst & Business Intelligence.
+            � 2026 Prerna Sachdeva � AI Engineer | LLM Applications & Multi-Agent Systems.
           </p>
         </div>
       </footer>
